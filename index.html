@@ -1,122 +1,129 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="icon" href="./images/TabLogo.png" type="image/x-icon">
-
-	<title> Git Line </title>
-	<link rel="stylesheet" href="./index.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="./images/TabLogo.png" type="image/x-icon">
+  <title>Git Line</title>
+  <link rel="stylesheet" href="./index.css">
+  <script defer src="./index.js"></script>
 </head>
 <body>
 
-	<div class="per"> 
-        <h1 id="personal"> 😻 Git Hub Commands 😻</h1>
+  <!-- Header Section -->
+  <div class="header">
+    <h1 id="personal">😻 Git Hub Commands 😻</h1>
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="Search Command...">
+      <ul id="suggestions"></ul>
+    </div>
+  </div>
+
+  <!-- Timeline Section -->
+  <div class="timeline">
+
+    <div class="container left-container">
+      <img src="images/git2.png" alt="Git logo">
+      <div class="text-box">
+        <h2><b>Command :</b> &nbsp; git init</h2>
+        <small>Description :</small>
+        <p>This Command initializes a hidden .git folder in the directory.</p>
+        <span class="left-container-arrow"></span>
+      </div>
     </div>
 
-	<div class="timeline">
+    <div class="container right-container">
+      <img src="images/git2.png" alt="Git logo">
+      <div class="text-box">
+        <h2><b>Command :</b> &nbsp; git status</h2>
+        <small>Description :</small>
+        <p>This Command shows all files in the directory, indicating whether they are tracked or untracked.</p>
+        <span class="right-container-arrow"></span>
+      </div>
+    </div>
 
-		<div class="container left-container">
-			<img src="images/git2.png">
-			<div class="text-box">
-				<h2>  <bold> Command : </bold> &nbsp; git init </h2>
-				<small> Description : </small>
-				<p> This Command Will Initilizes an Hidden Folder in the Directory</p>
-				<span class="left-container-arrow"> </span>
-			</div>
-		</div>
+    <div class="container left-container">
+      <img src="images/git2.png" alt="Git logo">
+      <div class="text-box">
+        <h2><b>Command :</b> &nbsp; git add .</h2>
+        <small>Description :</small>
+        <p>Adds all changes in the current directory to the staging area and converts untracked files to tracked files.</p>
+        <span class="left-container-arrow"></span>
+      </div>
+    </div>
 
-		<div class="container right-container">
-			<img src="images/git2.png">
-			<div class="text-box">
-				<h2> <bold> Command : </bold> &nbsp; git status </h2>
-				<small> Description : </small>
-				<p> This Command Will Show the all files in the directory in which it tells the All files are in Tracked Stage Or UnTracked Stage </p>
-				<span class="right-container-arrow"> </span>
-			</div>
-		</div>
+    <div class="container right-container">
+      <img src="images/git2.png" alt="Git logo">
+      <div class="text-box">
+        <h2><b>Command :</b> &nbsp; git config user.name</h2>
+        <small>Description :</small>
+        <p>Shows the GitHub username registered with your local machine.</p>
+        <span class="right-container-arrow"></span>
+      </div>
+    </div>
 
-		<div class="container left-container">
-			<img src="images/git2.png">
-			<div class="text-box">
-				<h2> <bold> Command : </bold> &nbsp; git add . </h2>
-				<small> Description : </small>
-				<p> The command "git add ." is used in Git version control to add all the changes in the current directory to the staging area. and Also it also converts all Untracked Files to The Tracking Files Stage. </p>
-				<span class="left-container-arrow"> </span>
-			</div>
-		</div>
+    <div class="container left-container">
+      <img src="images/git2.png" alt="Git logo">
+      <div class="text-box">
+        <h2><b>Command :</b> &nbsp; git config user.email</h2>
+        <small>Description :</small>
+        <p>This Command shows the email registered with your local Git configuration.</p>
+        <span class="left-container-arrow"></span>
+      </div>
+    </div>
 
-		<div class="container right-container">
-			<img src="images/git2.png">
-			<div class="text-box">
-				<h2> <bold> Command : </bold> &nbsp; git config user.name </h2>
-				<small> Description : </small>
-				<p> This Command Will Tell About The Any Github User Name is Registered with Your Local Machine. (For One Local Machine can Accept Only One Github Account Crenditials). </p>
-				<span class="right-container-arrow"> </span>
-			</div>
-		</div>
+    <div class="container right-container">
+      <img src="images/git2.png" alt="Git logo">
+      <div class="text-box">
+        <h2><b>Command :</b> &nbsp; git config user.name Github_Username</h2>
+        <small>Description :</small>
+        <p>Registers your GitHub username with your local Git configuration.</p>
+        <span class="right-container-arrow"></span>
+      </div>
+    </div>
 
-		<div class="container left-container">
-			<img src="images/git2.png">
-			<div class="text-box">
-				<h2> <bold> Command : </bold> &nbsp; git config user.email </h2>
-				<small> Description : </small>
-				<p> his Command Will Tell About The Any Github Attached Mail Or Personal Mail is Registered with Your Local Machine. (For One Local Machine can Accept Only One Github Account Crenditials). </p>
-				<span class="left-container-arrow"> </span>
-			</div>
-		</div>
+    <div class="container left-container">
+      <img src="images/git2.png" alt="Git logo">
+      <div class="text-box">
+        <h2><b>Command :</b> &nbsp; git config user.email Email_ID</h2>
+        <small>Description :</small>
+        <p>Registers your email with your local Git configuration. (It must match your GitHub account email.)</p>
+        <span class="left-container-arrow"></span>
+      </div>
+    </div>
 
-		<div class="container right-container">
-			<img src="images/git2.png">
-			<div class="text-box">
-				<h2> <bold> Command : </bold> &nbsp; git config user.name Github_Username </h2>
-				<small> Description : </small>
-				<p> When You Run This Command It will Register Your Github UserName With Your Local Machine. </p>
-				<span class="right-container-arrow"> </span>
-			</div>
-		</div>
+    <div class="container right-container">
+      <img src="images/git2.png" alt="Git logo">
+      <div class="text-box">
+        <h2><b>Command :</b> &nbsp; git commit -m "Write Your Message"</h2>
+        <small>Description :</small>
+        <p>Commits all staged files with a descriptive message. (Think of a commit as saving your work.)</p>
+        <span class="right-container-arrow"></span>
+      </div>
+    </div>
 
-		<div class="container left-container">
-			<img src="images/git2.png">
-			<div class="text-box">
-				<h2> <bold> Command : </bold> &nbsp; git config user.email Email_ID </h2>
-				<small> Description : </small>
-				<p> When You Run This Command It will Register Your Email_ID With Your Local Machine. (The Email_ID Should Be Connected to Your Github Account) </p>
-				<span class="left-container-arrow"> </span>
-			</div>
-		</div>
+    <!-- Remaining commands kept as-is -->
+    <div class="container left-container">
+      <img src="images/git2.png" alt="Git logo">
+      <div class="text-box">
+        <h2><b>Command :</b> &nbsp; git remote -v</h2>
+        <small>Description :</small>
+        <p>Shows all remotes linked to the current repository.</p>
+        <span class="left-container-arrow"></span>
+      </div>
+    </div>
 
-		<div class="container right-container">
-			<img src="images/git2.png">
-			<div class="text-box">
-				<h2> <bold> Command : </bold> &nbsp; git commit -m " Write Your Message " </h2>
-				<small> Description : </small>
-				<p> When You Run This Command It Will Make an Commit Of All Files In that Directory. (In Simple Words Commit Is LIke An Svaing Files) </p>
-				<span class="right-container-arrow"> </span>
-			</div>
-		</div>
+    <div class="container right-container">
+      <img src="images/git2.png" alt="Git logo">
+      <div class="text-box">
+        <h2><b>Command :</b> &nbsp; git remote add Remote_Name Repository_Link</h2>
+        <small>Description :</small>
+        <p>Creates a remote connection between your local repository and a GitHub repository.</p>
+        <span class="right-container-arrow"></span>
+      </div>
+    </div>
 
-		<div class="container left-container">
-			<img src="images/git2.png">
-			<div class="text-box">
-				<h2> <bold> Command : </bold> &nbsp; git remote -v </h2>
-				<small> Description : </small>
-				<p> This Command Will Show the All Remote Names Which Are Connected To The Github Repository </p>
-				<span class="left-container-arrow"> </span>
-			</div>
-		</div>
-
-		<div class="container right-container">
-			<img src="images/git2.png">
-			<div class="text-box">
-				<h2> <bold> Command : </bold> &nbsp; git remote add Remote_Name Repository_Link </h2>
-				<small> Description : </small>
-				<p> This Command Will Make An Remote Connection Between The Your Local machine And Github Repository. (You Can Write Any Name in the Place of Remote_Name). </p>
-				<span class="right-container-arrow"> </span>
-			</div>
-		</div>
-
-		<div class="container left-container">
+	<div class="container left-container">
 			<img src="images/git2.png">
 			<div class="text-box">
 				<h2> <bold> Command : </bold> &nbsp; git branch </h2>
@@ -237,8 +244,16 @@
 		</div>
 
 	</div>
+  </div>
 
-	<!-- <script src="./index.js"></script> -->
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p class="footer-quote">💡 <i>"Code, Commit, Push, Repeat — that’s how progress happens!"</i></p>
+      <p class="footer-info"> <b> (. ❛ ᴗ ❛.) </b> &nbsp; Made with ❤️ by <span class="highlight"> M.J.N.V.Sai &nbsp; ╰(*°▽°*)╯ </span></p>
+      <p class="footer-copy">© <span id="year"></span> Git Line — Learn Git the Fun Way</p>
+    </div>
+  </footer>
 
 </body>
 </html>
